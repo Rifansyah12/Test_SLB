@@ -6033,6 +6033,17 @@ fieldset:disabled .btn {
 .position-relative {
   position: relative !important;
 }
+
+.position-relative img {
+  width: 100%; /* Gambar mengikuti ukuran col-lg-5 */
+  max-width: 700px; /* Maksimal ukuran gambar */
+  height: auto; /* Menyesuaikan tinggi agar proporsional */
+  aspect-ratio: 1 / 1; /* Membuat gambar selalu kotak */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  display: block; /* Menghindari spasi ekstra */
+  margin: 0 auto; /* Memposisikan gambar di tengah */
+}
+
 .position-absolute {
   position: absolute !important;
 }

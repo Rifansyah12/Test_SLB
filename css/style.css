@@ -34,7 +34,7 @@ h3,
 .h2,
 .h3 {
   font-weight: 200;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 h4,
@@ -44,7 +44,7 @@ h6,
 .h5,
 .h6 {
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .display-1,
@@ -71,7 +71,7 @@ h6,
 
 /*** Button Start ***/
 .btn {
-  font-weight: 600;
+  font-weight: 0;
   transition: 0.5s;
 }
 
@@ -117,7 +117,7 @@ h6,
 }
 
 .btn-border-radius {
-  border-radius: 25% 10%;
+  border-radius: 10% 20%;
 }
 
 .img-border-radius {
@@ -133,7 +133,7 @@ h6,
 .topbar .top-info {
   font-size: medium;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
@@ -170,11 +170,15 @@ h6,
   transition: 0.5s;
 }
 
-.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav,
 .navbar .navbar-nav .nav-link.active,
-.fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.fixed-top.bg-white .navbar .navbar-nav,
 .fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
   color: var(--bs-primary);
+}
+
+.nav-link:hover {
+  color: yellow !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -185,10 +189,16 @@ h6,
   vertical-align: middle;
   margin-left: 8px;
 }
+@media (min-width: 1200px) {
+  .img {
+    max-height: 100px;
+    margin-right: 10px;
+  }
+}
 
 @media (min-width: 1200px) {
   .navbar .nav-item .dropdown-menu {
-    display: block;
+    display: none !important;
     visibility: hidden;
     top: 100%;
     font-weight: 400;

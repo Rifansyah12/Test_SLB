@@ -18,13 +18,13 @@
   --bs-white: #004cff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-primary: #198754;
+  --bs-primary: #1a5b3d;
   --bs-secondary: #4d65f9;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #ffecf2;
+  --bs-light: hsl(0, 0%, 100%);
   --bs-dark: #393d72;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -293,6 +293,7 @@ label {
 }
 button {
   border-radius: 0;
+  outline: 1;
 }
 button:focus:not(:focus-visible) {
   outline: 0;
@@ -507,7 +508,15 @@ progress {
 .blockquote-footer::before {
   content: "— ";
 }
+
+.img {
+  max-height: 70px;
+  margin-right: 10px;
+}
+
 .img-fluid {
+  max-height: 100px;
+  margin-right: 10px;
   max-width: 100%;
   height: auto;
 }
@@ -3352,6 +3361,10 @@ fieldset:disabled .btn {
     right: 0 /* rtl:ignore */;
     left: auto; /* rtl:ignore */
   }
+  .img {
+    max-height: 70px;
+    margin-right: 10px;
+  }
 }
 @media (min-width: 1400px) {
   .dropdown-menu-xxl-start {
@@ -3367,6 +3380,10 @@ fieldset:disabled .btn {
   .dropdown-menu-xxl-end[data-bs-popper] {
     right: 0 /* rtl:ignore */;
     left: auto; /* rtl:ignore */
+  }
+  .img {
+    max-height: 70px;
+    margin-right: 10px;
   }
 }
 .dropup .dropdown-menu[data-bs-popper] {
@@ -3635,10 +3652,14 @@ fieldset:disabled .btn {
   .nav-link {
     transition: none;
   }
+  .img {
+    max-height: 70px;
+    margin-right: 10px;
+  }
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #cc3a66;
+  color: #ffcc00;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -6807,7 +6828,11 @@ fieldset:disabled .btn {
 }
 
 .text-extra-bold {
-  font-weight: 1000; /* Sangat tebal */
+  font-weight: 8000; /* Sangat tebal */
+}
+
+.text-semi-bold {
+  font-weight: 100; /* Sangat tebal */
 }
 .text-start {
   text-align: left !important;
@@ -6875,6 +6900,10 @@ fieldset:disabled .btn {
   color: #0040ff;
 }
 
+.text-green {
+  color: #1a5b3d;
+}
+
 .text-muted-gray {
   color: #cccccc; /* Abu-abu terang */
 }
@@ -6919,7 +6948,7 @@ fieldset:disabled .btn {
   background-color: #dc3545 !important;
 }
 .bg-light {
-  background-color: #ffecf2 !important;
+  background-color: #ffff !important;
 }
 .bg-dark {
   background-color: #393d72 !important;

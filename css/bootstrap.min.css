@@ -6137,6 +6137,9 @@ fieldset:disabled .btn {
 .border-success {
   border-color: #198754 !important;
 }
+.border-success2 {
+  border-color: #20c997 !important;
+}
 .border-info {
   border-color: #0dcaf0 !important;
 }
@@ -6894,6 +6897,9 @@ fieldset:disabled .btn {
 
 .text-success {
   color: #198754 !important;
+}
+.text-success2 {
+  color: #01d070 !important;
 }
 .text-info {
   color: #0dcaf0 !important;

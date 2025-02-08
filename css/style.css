@@ -662,8 +662,7 @@ h6,
 
 /*** Footer Start ***/
 .footer {
-  background: linear-gradient(rgba(98, 96, 96, 0.8), rgba(255, 255, 255, 1)),
-    url(../img/background.jpg);
+  background: #535353;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

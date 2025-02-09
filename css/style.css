@@ -656,7 +656,7 @@ h6,
 
 .testimonial .testimonial-carousel .owl-dot.active {
   width: 30px;
-  background: var(--bs-secondary);
+  background: var(--bs-warning);
 }
 /*** testimonial End ***/
 

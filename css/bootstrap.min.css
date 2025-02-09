@@ -510,15 +510,16 @@ progress {
 }
 
 .img {
-  max-height: 70px;
+  max-height: 100px;
   margin-right: 10px;
 }
 
 .img-fluid {
-  max-height: 100px;
+  max-height: 200px;
   margin-right: 10px;
   max-width: 100%;
   height: auto;
+  /* object-fit: contain; */
 }
 .img-thumbnail {
   padding: 0.25rem;
